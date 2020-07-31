@@ -9,12 +9,12 @@
   </parent>
 
   <artifactId>vertx-zookeeper</artifactId>
-  <version>3.9.2</version>
+  <version>harana-3.9.2</version>
   <name>Vert.x Zookeeper Cluster Manager</name>
 
   <properties>
     <stack.version>3.9.2</stack.version>
-    <curator.version>2.13.0</curator.version>
+    <curator.version>4.2.0</curator.version>
     <junit.version>4.12</junit.version>
     <asciidoc.dir>${project.basedir}/src/main/asciidoc</asciidoc.dir>
   </properties>
@@ -82,7 +82,7 @@
     <dependency>
       <groupId>org.apache.zookeeper</groupId>
       <artifactId>zookeeper</artifactId>
-      <version>3.4.13</version>
+      <version>3.6.1</version>
       <exclusions>
         <exclusion>
           <groupId>org.slf4j</groupId>
@@ -160,7 +160,7 @@
     <dependency>
       <groupId>io.vertx</groupId>
       <artifactId>vertx-web</artifactId>
-      <version>${project.version}</version>
+      <version>${stack.version}</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
